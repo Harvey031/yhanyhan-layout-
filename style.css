@@ -551,12 +551,15 @@ nav {
 /* Review Section */
 
 /* Container for the whole reviews section */
+
 .reviews-wrapper {
   font-family: "Arial", sans-serif;
   background-color: #fff;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
+  box-sizing: border-box; /* ← fix */
+  width: 100%;            /* ← fix */
 }
 
 .reviews-section {
@@ -573,7 +576,7 @@ nav {
 }
 
 .reviews-header h1 {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 5vw, 2.5rem); /* ← responsive */
   font-weight: 800;
   margin: 0;
 }
@@ -594,6 +597,7 @@ nav {
   gap: 2rem;
   margin-bottom: 3rem;
   align-items: center;
+  box-sizing: border-box; /* ← fix */
 }
 
 .left-score {
@@ -602,7 +606,7 @@ nav {
 }
 
 .big-score {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 8vw, 4rem); /* ← responsive */
   font-weight: 900;
   margin: 0;
 }
@@ -639,10 +643,10 @@ nav {
 /* The Grid for 6 Boxes */
 .reviews-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* This makes 3 columns */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   width: 100%;
+  box-sizing: border-box; /* ← fix */
 }
 
 .review-card {
@@ -652,6 +656,8 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box; /* ← fix */
+  min-width: 0;           /* ← fix: prevents card overflow */
 }
 
 .stars {
@@ -693,6 +699,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 4px;
+  white-space: nowrap; /* ← fix: prevents wrapping */
 }
 
 /* Footer Button */
@@ -712,7 +719,6 @@ nav {
   font-size: 1rem;
   margin-top: 1rem;
 }
-
 
 /* Review Section End */
 
@@ -1170,6 +1176,16 @@ nav {
    margin: 0 auto;
   }
 
+  .second-cntainer p {
+   font-size: 0.5rem; 
+  }
+
+ .reviews-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
+
   .vmgo-container {
     display: flex;
     flex-direction: column;
@@ -1189,6 +1205,15 @@ nav {
    margin: 0 auto;
   }
 
+ .second-container p {
+   font-size: 0.5rem; 
+  }
+
+ .reviews-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ }
 
   .vmgo-container {
     display: flex;

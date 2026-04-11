@@ -20,147 +20,145 @@ body {
 }
 
 /*Start of Navigation*/
-nav{
-  position: fixed;     
-  top:0;
-  left:0;
-  width:100%;
-  z-index:1000;
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 
-  display:flex;
-  justify-content:center;  
-  align-items:center;
-  gap:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
 
-  padding:15px 5%;
-  background:#fff;
-  box-shadow:0 2px 8px rgba(0,0,0,0.08);
-  flex-wrap:wrap; /* responsive */
+  padding: 15px 5%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
 }
 
-.logo{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  gap:10px;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.logo img{
-  width:80px;
+.logo img {
+  width: 80px;
 }
 
-.logo h2{
-  font-size:22px;
-  font-family:Helvetica, sans-serif;
-  color:#333;
-  white-space:nowrap;
+.logo h2 {
+  font-size: 22px;
+  font-family: Helvetica, sans-serif;
+  color: #333;
+  white-space: nowrap;
 }
 
-.nav-links{
-  display:flex;
-  list-style:none;
-  gap:25px;
-  justify-content:center;
-  align-items:center;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-links a{
-  text-decoration:none;
-  color:#333;
-  font-size:16px;
-  font-family:Helvetica;
-  transition:0.3s;
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-family: Helvetica;
+  transition: 0.3s;
 }
 
-.nav-links a:hover{
-  color:#E91E63;
+.nav-links a:hover {
+  color: #E91E63;
 }
 
-.search-box{
-  display:flex;
-  align-items:center;
-  justify-content:center;
+.search-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.search-container-style{
-  display:flex;
-  align-items:center;
-  background:linear-gradient(to right,#E91E63,#F06292);
-  border-radius:30px;
-  padding:5px 10px;
+.search-container-style {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #E91E63, #F06292);
+  border-radius: 30px;
+  padding: 5px 10px;
 }
 
-.search-box input{
-  border:none;
-  outline:none;
-  background:transparent;
-  color:#fff;
-  padding:8px;
-  width:160px;
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  padding: 8px;
+  width: 160px;
 }
 
-.search-box input::placeholder{
-  color:rgba(255,255,255,0.8);
+.search-box input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.search-btn-pink{
-  border:none;
-  background:#fff;
-  color:#E91E63;
-  padding:8px 14px;
-  border-radius:20px;
-  cursor:pointer;
-  font-weight:bold;
+.search-btn-pink {
+  border: none;
+  background: #fff;
+  color: #E91E63;
+  padding: 8px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-@media(max-width:992px){
+@media(max-width:992px) {
 
-  nav{
-    gap:20px;
-    padding:12px 20px;
+  nav {
+    gap: 20px;
+    padding: 12px 20px;
   }
 
-  .logo h2{
-    font-size:18px;
+  .logo h2 {
+    font-size: 18px;
   }
 
-  .nav-links{
-    gap:15px;
+  .nav-links {
+    gap: 15px;
   }
 
-  .nav-links a{
-    font-size:14px;
+  .nav-links a {
+    font-size: 14px;
   }
 
-  .search-box input{
-    width:120px;
+  .search-box input {
+    width: 120px;
+  }
+}
+
+@media(max-width:768px) {
+
+  nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .logo h2 {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .search-box input {
+    width: 100px;
   }
 }
 
-@media(max-width:768px){
-
-  nav{
-    flex-direction:column;
-    gap:15px;
-  }
-
-  .nav-links{
-    flex-wrap:wrap;
-    gap:12px;
-  }
-
-  .logo h2{
-    font-size:17px;
-    text-align:center;
-  }
-
-  .search-box input{
-    width:100px;
-  }
-}
-/*End of Navigation*/
-
-/* START OF NAVIGATION */
 .navigation {
   gap: 2rem;
   display: flex;
@@ -215,8 +213,6 @@ nav{
   justify-content: center;
 }
 
-
-/* Hero Section */
 .homepage-section {
   padding: 60px 10%;
   background: linear-gradient(to right, #ffffff, #fff5f7);
@@ -252,10 +248,8 @@ nav{
   max-width: 450px;
 }
 
-/* Button Selectors - Matched to new HTML names */
 .btn-Shop {
   background: #E91E63;
-  /* Changed to pink for visibility */
   color: white;
   border: none;
   padding: 12px 25px;
@@ -269,13 +263,11 @@ nav{
   background: transparent;
   border: 1px solid #E91E63;
   color: #E91E63;
-  /* Changed from white to pink so it's readable */
   padding: 12px 25px;
   border-radius: 25px;
   cursor: pointer;
 }
 
-/* Image Section - Matched to .main-image */
 .main-image {
   flex: 1;
   display: flex;
@@ -392,7 +384,6 @@ nav{
 .card-content {
   padding: 20px;
   background: var(--light-pink);
-  /* Matches the bottom tint in your image */
   text-align: left;
 }
 
@@ -447,8 +438,6 @@ nav{
 /* END OF DEALS SECTION */
 
 /* Products Section */
-
-/* 1. The Grid Container */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -459,14 +448,11 @@ nav{
   width: 100%;
 }
 
-/* 2. The Main Card */
 .grid-box {
   background-color: #fff;
   border: 1px solid #ddd;
-  ;
   border-radius: 20px;
   overflow: hidden;
-  /* Clips the pink section to the card's rounded corners */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
   border-color: pink;
@@ -474,14 +460,12 @@ nav{
 
 .grid-box:hover {
   transform: translateY(-8px);
-
 }
 
 .second-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .second-container h1 {
@@ -498,7 +482,6 @@ nav{
   line-height: 1.6;
 }
 
-/* 3. Image Section */
 .image-wrapper {
   position: relative;
   width: 100%;
@@ -506,16 +489,12 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Controls how much space the photo takes */
 }
 
 .image-wrapper img {
-
   height: 100%;
   width: 100%;
   object-fit: contain;
-
-
 }
 
 .tag {
@@ -531,7 +510,6 @@ nav{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 4. The Pink Info Section */
 .product-info {
   background-color: #fce4ec;
 
@@ -543,7 +521,6 @@ nav{
 
 .title {
   font-family: "Arial Black", sans-serif;
-  /* Heavy font for that bold look */
   font-size: 1.1rem;
   color: #000;
   margin: 0;
@@ -560,7 +537,6 @@ nav{
   margin-left: 5px;
 }
 
-/* 5. Bottom Row: Price & Button */
 .price-action-row {
   display: flex;
   justify-content: space-between;
@@ -572,7 +548,6 @@ nav{
   font-size: 1.5rem;
   font-weight: 900;
   color: #e91e63;
-  /* Bold Pink color */
   margin: 0;
   font-family: Verdana;
 }
@@ -595,11 +570,8 @@ nav{
 
 .cart-btn:hover {
   background-color: #c2185b;
-  /* Darkens slightly on hover */
 }
 
-/* Module for Product Cards */
-/* 1. Modal Overlay (Nakatago by default) */
 .modal-overlay {
   display: none;
   position: fixed;
@@ -608,21 +580,17 @@ nav{
   width: 100vw;
   height: 100vh;
   background: rgba(0, 0, 0, 0.7);
-  /* Itim na background */
   z-index: 9999;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(5px);
-  /* Blur effect sa likod */
 }
 
-/* 2. TRIGGER: Lalabas lang ang modal kapag ang ID ay nasa URL (#product1) */
 .modal-overlay:target {
   display: flex;
   outline: none;
 }
 
-/* 3. Main Information Card */
 .modal-card {
   background: #fff;
   width: 90%;
@@ -638,7 +606,6 @@ nav{
   max-width: 850px;
   background: white;
   margin: auto;
-  /* Gitna */
 }
 
 @keyframes modalPop {
@@ -658,7 +625,6 @@ nav{
   flex-direction: row;
 }
 
-/* 4. Left Image Side */
 .modal-img {
   flex: 1;
   background: #f9f9f9;
@@ -672,7 +638,6 @@ nav{
   object-fit: contain;
 }
 
-/* 5. Right Details Side */
 .modal-details {
   flex: 1.2;
   padding: 30px 40px;
@@ -740,7 +705,6 @@ nav{
   margin-top: 5px;
 }
 
-/* 6. Add to Cart Button */
 .m-btn {
   width: 100%;
   background: #e91e63;
@@ -754,7 +718,6 @@ nav{
   margin-top: 15px;
 }
 
-/* 7. Close (X) & Outside Closer */
 .close-x {
   position: absolute;
   top: 15px;
@@ -774,7 +737,6 @@ nav{
   cursor: default;
 }
 
-/* Mobile responsive setup */
 @media (max-width: 700px) {
   .modal-flex {
     flex-direction: column;
@@ -784,17 +746,9 @@ nav{
     height: 250px;
   }
 }
-
-
-
-
-
 /* End of Products Section */
 
 /* Review Section */
-
-/* Container for the whole reviews section */
-
 .reviews-wrapper {
   font-family: "Arial", sans-serif;
   background-color: #fff;
@@ -802,9 +756,7 @@ nav{
   display: flex;
   justify-content: center;
   box-sizing: border-box;
-  /* ← fix */
   width: 100%;
-  /* ← fix */
 }
 
 .reviews-section {
@@ -822,7 +774,6 @@ nav{
 
 .reviews-header h1 {
   font-size: clamp(1.5rem, 5vw, 2.5rem);
-  /* ← responsive */
   font-weight: 800;
   margin: 0;
 }
@@ -832,7 +783,6 @@ nav{
   margin-top: 0.5rem;
 }
 
-/* Summary Stats */
 .stats-summary-box {
   width: 100%;
   max-width: 40rem;
@@ -844,7 +794,6 @@ nav{
   margin-bottom: 3rem;
   align-items: center;
   box-sizing: border-box;
-  /* ← fix */
 }
 
 .left-score {
@@ -854,7 +803,6 @@ nav{
 
 .big-score {
   font-size: clamp(2.5rem, 8vw, 4rem);
-  /* ← responsive */
   font-weight: 900;
   margin: 0;
 }
@@ -888,14 +836,12 @@ nav{
   border-radius: 10px;
 }
 
-/* The Grid for 6 Boxes */
 .reviews-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
   width: 100%;
   box-sizing: border-box;
-  /* ← fix */
 }
 
 .review-card {
@@ -906,9 +852,7 @@ nav{
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  /* ← fix */
   min-width: 0;
-  /* ← fix: prevents card overflow */
 }
 
 .stars {
@@ -951,10 +895,8 @@ nav{
   align-items: center;
   gap: 4px;
   white-space: nowrap;
-  /* ← fix: prevents wrapping */
 }
 
-/* Footer Button */
 .action-footer {
   text-align: center;
   margin-top: 3rem;
@@ -971,11 +913,9 @@ nav{
   font-size: 1rem;
   margin-top: 1rem;
 }
-
 /* Review Section End */
 
 /* VMGO SECTION */
-
 .vmgo-container {
   display: flex;
   flex-direction: row;
@@ -1421,7 +1361,7 @@ nav{
   width: 100%;
 }
 
-/* mobile */
+/* MOBILE */
 @media (max-width: 480px) {
 
   .main-image img {
@@ -1449,8 +1389,7 @@ nav{
   }
 }
 
-
-/* Tablet */
+/* TABLET */
 @media (max-width: 768px) {
 
   .main-image img {

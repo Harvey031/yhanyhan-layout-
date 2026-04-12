@@ -479,6 +479,7 @@ nav{
   margin: 0 auto;
   padding: 3rem 1rem;
   width: 100%;
+  background: linear-gradient(to right, #ffffff, #fff5f7);
 }
 
 /* 2. The Main Card */

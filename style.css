@@ -490,7 +490,7 @@ nav {
 .second-container p {
   font-family: Helvetica, sans-serif;
   color: gray;
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: 200;
   line-height: 1.6;
 }
@@ -1402,10 +1402,7 @@ nav {
     margin: 0 auto;
   }
 
-  .second-container p {
-    font-size: 0.7rem;
-    
-  }
+ 
 
   .grid-container {
 
@@ -1452,10 +1449,6 @@ nav {
   .grid-container {
     margin: 0 auto;
     width: 100%;
-  }
-
-  .second-container p {
-    font-size: 14px;
   }
 
   .modal-card {

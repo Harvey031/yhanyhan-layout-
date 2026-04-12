@@ -1407,7 +1407,9 @@ nav {
   }
 
   .grid-container {
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .reviews-grid {
@@ -1417,11 +1419,12 @@ nav {
   }
 
   
-
   .vmgo-container {
-    display: flex;
+
+   
     flex-direction: column;
     align-items: center;
+
 
   }
 
@@ -1444,10 +1447,11 @@ nav {
 
   .grid-container {
     margin: 0 auto;
+    width: 100%;
   }
 
   .second-container p {
-    font-size: 0.9rem;
+    font-size: 2vh;
   }
 
   .modal-card {
@@ -1465,11 +1469,30 @@ nav {
     justify-content: center;
   }
 
-  .vmgo-container {
+  .aboutus-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 40px 20px;
+    gap: 3rem;
+  }
 
+  /* 2. Target the History and Stats Boxes parent */
+  .vmgo-container {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* 3. Target the Vision/Mission/Goals cards parent */
+  .vmgocards-container {
+
+    flex-direction: column;
+   
+  }
+
+  .vision-card, .mission-card, .goals-card {
+   width: 100%;
   }
 
   .right-content {
